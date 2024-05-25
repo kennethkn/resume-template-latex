@@ -1,0 +1,168 @@
+% === Ken's Resume ===
+% Inspired by Jake's Resume (https://github.com/jakegut/resume)
+% Didn't like Jake's version because the code was bloated and I wanted a more compact resume layout.
+% This is a compact resume template with concise code and consistent formatting between sections.
+% Edit the content as directed and you will end up with a professional resume of your own.
+
+% Author: Kenneth Kwan
+% License: MIT License
+
+\documentclass{article}
+\usepackage[margin=0.2in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% For ATS-friendly PDF
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Disable page numbering
+\pagestyle{empty}
+
+% Format title
+% \titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
+\titleformat{\section}{\large\scshape}{}{0pt}{}[\titlerule\vspace{-5pt}]
+
+% Format list
+\setlist[itemize,1]{label={}, leftmargin=0.15in}
+\setlist[itemize,2]{label=\textbullet, leftmargin=0.3in, topsep=-2pt, itemsep=0pt, before=\small}
+
+\begin{document}
+
+\begin{center}
+    % TEMPLATE:
+    % \textbf{\Huge\scshape Your Name} \\
+    % Your Location \(\cdot \) \href{mailto:your@email}{your@email} \\
+    % \href{https://www.linkedin.com/in/your-linkedin}{https://www.linkedin.com/in/your-linkedin} \(\cdot \) \href{https://github.com/your-github}{https://github.com/your-github}\vspace{-8pt}
+
+    {\Huge\scshape Kenneth Kwan} \\
+    Hong Kong \(\cdot \) \href{mailto:ken@example.com}{ken@example.com} \\
+    \href{https://www.linkedin.com/in/.../}{https://www.linkedin.com/in/ken/} \(\cdot \) \href{https://github.com/...}{https://github.com/ken}\vspace{-8pt}
+\end{center}
+
+\section{Education}
+\begin{itemize}
+    % TEMPLATE:
+    % \item \textbf{School} \hfill Location \\
+    %       Degree or Study Aboard Program \hfill Date
+    %       \begin{itemize}
+    %           \item Relevant Coursework: Course 1, Course 2, Course 3
+    %       \end{itemize}
+
+    \item \textbf{The University of Hong Kong} \hfill Hong Kong \\
+          Bachelor of Engineering in Computer Science, Finance 2nd Major \hfill Sep. 2022 {--} June 2026
+          \begin{itemize}
+              \item Relevant Coursework:
+                    Computer Programming I-II (Python/C++),
+                    Object-oriented Programming and Java,
+                    Data Structures and Algorithms,
+                    Machine Learning,
+                    Financial Accounting,
+                    Microeconomics,
+                    Analysis of Economic Data,
+                    Macroeconomics,
+                    Corporate Finance
+          \end{itemize}
+
+\end{itemize}\vspace{-16pt}
+
+\section{Experience}
+\begin{itemize}
+    % TEMPLATE:
+    % \item \textbf{Company} \hfill Location \\
+    %       Position \hfill Date
+    %       \begin{itemize}
+    %           \item Description of responsibilities and achievements.
+    %       \end{itemize}
+
+    \item \textbf{The University of Hong Kong} \hfill Hong Kong \\
+          Student Teaching Assistant (STA) --- Part Time \hfill Jan. 2024 {--} May 2024
+          \begin{itemize}
+              \item Conducted 5 in-person support sessions.
+              \item Assisted 20+ students with lecture content and assignments on C++, shell scripting, and Linux OS\@.
+          \end{itemize}
+    \item \textbf{X Technology} \hfill Hong Kong \\
+          Software Development Internship --- Full Time \hfill Dec. 2023 {--} Jan. 2024
+          \begin{itemize}
+              \item Contributed to system design in a full-stack application according to user requirements.
+              \item Utilized Figma and Miro to create comprehensive UX and system flowcharts.
+              \item Collaborated closely with colleagues in the finalization of UI design.
+              \item Leveraged web development expertise to assess implementation feasibility of design.
+              \item Received a strong reference letter for outstanding performance and dedication in the role.
+              \item Offered continued part-time work based on contributions to the project.
+          \end{itemize}
+
+\end{itemize}\vspace{-16pt}
+
+\section{Projects}
+\begin{itemize}
+    % TEMPLATE:
+    % \item \textbf{Project Name} \, \textit{Languages, Tools} \hfill Date \\
+    %       \href{https://project-link}{https://project-link}
+    %       \begin{itemize}
+    %           \item Description of the project.
+    %       \end{itemize}
+
+    \item \textbf{U.S. Congress Tweets Analysis} \, \textit{R, Python, PostgreSQL} \hfill May 2024 \\
+          \href{https://github.com/...}{https://github.com/ken/project-link}
+          \begin{itemize}
+              \item Analyzed 4.3M tweets from US Congress members using R and Python, focusing on sentiment and frequency analysis.
+              \item Utilized PostgreSQL and SQLAlchemy to store and query data.
+              \item Presented findings in a detailed report with ggplot2 visualizations.
+          \end{itemize}
+    \item \textbf{Instagram Activities Wipe} \, \textit{Python, Selenium} \hfill March 2024 \\
+          \href{https://github.com/...}{https://github.com/ken/project-link}
+          \begin{itemize}
+              \item Selenium script to automate activity deletion on Instagram, including likes and comments.
+              \item Quickly gained 15+ users as the tool address the lack of a native feature for bulk activity deletion on Instagram.
+          \end{itemize}
+    \item \textbf{Course Planner} \, \textit{React, HTML/CSS, GitHub Actions} \hfill Feb. 2024 \\
+          \href{https://ken.github.io/.../}{https://ken.github.io/project-link/}
+          \begin{itemize}
+              \item Comprehensive tool to build a semester timetable and study plan, and visualize syllabuses with a flowchart. Developed in a team of 3.
+              \item Helped 20+ users since the installation of Google Analytics recently.
+          \end{itemize}
+    \item \textbf{Cangjie Lookup} \, \textit{React, Vite, HTML/CSS, GitHub Actions} \hfill Aug. 2023 \\
+          \href{https://kennethkn.github.io/.../}{https://ken.github.io/project-link/}
+          \begin{itemize}
+              \item Lookup Cangjie/Sucheng codes for Chinese characters and punctuations via a simple and elegant web interface.
+              \item Helped 35+ users since site launch on GitHub Pages.
+          \end{itemize}
+
+\end{itemize}\vspace{-16pt}
+
+\section{Certifications} % You can change this to "Awards" or "Achievements" if you prefer
+\begin{itemize}
+    % TEMPLATE:
+    % \item \textbf{Certification Title} \hfill Issuer \\
+    %       Description \hfill Date
+    %       \begin{itemize}
+    %           \item Details of the certification, including skills involved and achievements.
+    %       \end{itemize}
+
+    \item \textbf{Supervised Machine Learning: Regression and Classification} \hfill DeepLearning.AI \\
+          Certificate of Completion \hfill March 2024
+    \item \textbf{CS50's Introduction to Computer Science} \hfill Harvard Online \\
+          Certificate of Completion \hfill Feb. 2024
+    \item \textbf{IELTS Academic} \hfill British Council \\
+          Overall Band Score: 7.5 \hfill Dec. 2023
+    \item \textbf{CS50's Web Programming with Python and JavaScript} \hfill Ongoing
+          \begin{itemize}
+              \item Built 5 projects involving Flask, Django, JavaScript, and React. A final project short to complete the course.
+          \end{itemize}
+
+\end{itemize}\vspace{-16pt}
+
+\section{Skills}
+\begin{itemize}[itemsep=-2pt]
+    % TEMPLATE:
+    \item \textbf{Languages:} HTML/CSS, JavaScript, TypeScript, Python, R, C/C++, Java, Bash, SQL, LaTeX, Markdown
+    \item \textbf{Frameworks:} React, Node.js, Flask, Django, Tailwind CSS, Bootstrap
+    \item\textbf{Developer Tools:} Git, VS Code, RStudio, Eclipse, Jupyter Notebook, Conda, mpm, Miro, Figma, PostgreSQL
+    \item \textbf{Libraries:} pandas, NumPy, Matplotlib, scikit-learn, Selenium, SQLAlchemy, ggplot2
+    \item \textbf{Business Tools:} Microsoft Office (Word, Excel, PowerPoint, Access), Google Workspace
+\end{itemize}
+
+\end{document}
