@@ -8,6 +8,6 @@ A professional, compact resume template in LaTeX.
 - Edit the content as directed and you will end up with a professional resume of your own.
 - [glyphtounicode.tex](glyphtounicode.tex) is from <https://github.com/kks32/PhDThesisLyX/blob/master/glyphtounicode.tex>
 
-Star if it helped! 🌟
+Star if it helped! Good luck on your job hunting 🌟
 
 ![Resume](resume.jpeg)
